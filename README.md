@@ -1,4 +1,4 @@
-##Lab 03: jQuery and events
+Code Fellows 301: Kenny's Portfolio
 =======
 [gh-pages](https://ibis0503.github.io/301n7-portfolio/)
 
