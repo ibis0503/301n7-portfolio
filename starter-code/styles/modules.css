@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Suranna', serif;
+  font-family: font-family: 'Roboto', sans-serif;
+  src: <link href="https://fonts.googleapis.com/css?family=Roboto|Suranna" rel="stylesheet">
+}
+
+footer {
+  font-family: 'Roboto';
+  color: #7b7b7b;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Suranna';
+  font-weight: 100;
+  margin: 0;
+  color: #000000;
+  line-height: 1;
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-family: 'Roboto';
+  color: #000000;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 5px;
+  padding-top: 16px;
+}
+
+p {
+  font-family: 'Roboto';
+  color: #7b7b7b;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+#space {
+  height: 50px;
+}
+
+#about {
+  padding: 2em;
+}
+
+.site-header {
+  background: #D8D8D8;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.heading-group-h1 {
+  float: left;
+  padding: 2em 0em 0em 2em;
+}
+
+.icon-menu {
+  font-size: 3em;
+  float: right;
+}
+
+.main-nav {
+  padding: 2em;
+}
+
+.main-nav ul {
+  display: none;
+  padding: 0;
+  list-style: none;
+  clear: both;
+}
+
+.main-nav:hover ul {
+  display: block;
+}
+
+.main-nav li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  padding: .5em .2em;
+  border-bottom: 1px solid #ccc;
+}
+
+#filters {
+  padding: 0;
+  list-style: none;
+}
+
+.template {
+  display: none;
+}
+
+.byline {
+  color: #777;
+}
+
+.byline a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .container {
+    width: 50%;
+    margin: auto;
+  }
+
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav {
+    padding: .2em .2em .2em 2em;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .main-nav ul {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  .main-nav ul li {
+    border-bottom: none;
+  }
+
+  .main-nav:hover ul {
+    display: flex;
+  }
+
+  .main-nav ul li:hover a {
+    color: #29506D;
+  }
+
+}

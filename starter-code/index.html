@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/styles/normalize.css">
+  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+
+  <!--
+  TODO: Add a script tag to hold the Handlebars template.
+  - Be sure to give it a meaningful id attribute.
+  - Move your old template structure to here. Remember that this template
+  needs to have the same structure as the old one!
+  - Insert placeholder keys.
+  - If your object doesn't have values you need yet, you can add those properties in the model.
+-->
+<script id="blog-template" type="text/x-handlebars-template">
+  <article class="clearfix" data-author="{{author}}" data-category="{{category}}">
+    <header>
+      <h1>{{title}}</h1>
+      <div class="byline">
+        By <address><a href="{{authorUrl}}">{{author}}</a></address>
+        {{publishStatus}}
+      </div>
+    </header>
+    <section class="article-body">{{{body}}}</section>
+    <a href="#" class="read-on">Read on &rarr;</a>
+  </article>
+</script>
+
+</head>
+<body>
+  <header class="site-header clearfix">
+    <div class="container">
+      <section class="heading-group-h1">
+        <h1>KH</h1>
+      </section>
+      <nav class="main-nav">
+        <div class="icon-menu"></div>
+        <ul>
+          <li class="tab" data-content="about"><a href="#"> Home </a></li>
+          <li class="tab" data-content="articles"><a href="#"> Blog </a></li>
+          <li><a href="http://twitter.com/kenehong" target="_blank"> Twitter</a></li>
+          <li><a href="http://github.com/ibis0503" target="_blank"> GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <main>
+    <div class="container">
+    <section id="articles" class="tab-content">
+      <div>
+        <ul id="filters">
+          <li>
+            <select id="author-filter">
+              <option value="">-- Filter by Authors --</option>
+            </select>
+          </li>
+          <li>
+            <select id="category-filter">
+              <option value="">-- Filter by Categories --</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="about" class="tab-content">
+      <section>
+        <h1>Work Experiecne</h1>
+        <h2>T-Mobile / 2017 - Present</h2>
+        <p>Deliver Web and mobile app-based design solutions</p>
+        <p>Align to project priorities, milestones, guard rails, deliverables and timelines</p>
+        <h2>Microsoft</h2>
+        <p>Share Point Mobile UX (iOS, Android, Windows)</p>
+        <p>Storefront expereicen across web, tablet, and mobile</p>
+        <p>Maintained the run-of-business UX for the live site (microsoft.com)</p>
+      </section>
+      <div id="space"></div>
+      <section>
+        <h1>Education</h1>
+        <h2>University of Washington / 2014 - 2015</h2>
+        <p>Professional degree in Human Centered Design &amp; Engineering</p>
+        <h2>University of Washington / 2008 - 2010</h2>
+        <p>B.A in interdisciplinary visual arts</p>
+      </section>
+    </div>
+    </main>
+    <footer>
+      &copy; 2017 Code Fellows | Kenny Hong | 301 Portfolio
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- TODO: Include Handlebars.JS from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+    <script src="scripts/blogArticles.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
+  </body>
+  </html>
