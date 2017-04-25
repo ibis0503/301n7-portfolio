@@ -8,10 +8,9 @@ body {
   color: #313131;
 }
 
-article {
-  border-bottom: 2px solid black;
-  margin: 0 2.5%;
-  padding: 2% 0;
+hr {
+  margin: 1em;
+  width: 80%;
 }
 
 /*TEXT STYLES
@@ -28,8 +27,14 @@ address {
 =======================================*/
 
 a, a:link, a:active {
+  font-family: 'Roboto';
   text-decoration: none;
   color: #777;
+  color: #7b7b7b;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+  list-style-type: none;
 }
 
 a:hover, a:focus {
