@@ -1,6 +1,6 @@
 'use strict';
 
-var articleView = {};
+const articleView = {};
 
 articleView.populateFilters = function() {
   $('article').each(function() {
@@ -66,10 +66,14 @@ articleView.setTeasers = function() {
   });
 };
 
-$(document).ready(function() {
+articleView.initIndexPage = function() {
+  Article.all.forEach(function(article) {
+    $('#articles').append(article.toHtml())
+  });
+
   articleView.populateFilters();
   articleView.handleCategoryFilter();
   articleView.handleAuthorFilter();
   articleView.handleMainNav();
   articleView.setTeasers();
-})
+};
