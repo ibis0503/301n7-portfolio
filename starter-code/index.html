@@ -54,42 +54,42 @@
   </header>
   <main>
     <div class="container">
-    <section id="articles" class="tab-content">
-      <div>
-        <ul id="filters">
-          <li>
-            <select id="author-filter">
-              <option value="">-- Filter by Authors --</option>
-            </select>
-          </li>
-          <li>
-            <select id="category-filter">
-              <option value="">-- Filter by Categories --</option>
-            </select>
-          </li>
-        </ul>
+      <section id="articles" class="tab-content">
+        <div>
+          <ul id="filters">
+            <li>
+              <select id="author-filter">
+                <option value="">-- Filter by Authors --</option>
+              </select>
+            </li>
+            <li>
+              <select id="category-filter">
+                <option value="">-- Filter by Categories --</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="about" class="tab-content">
+        <section>
+          <h1>Work Experiecne</h1>
+          <h2>T-Mobile / 2017 - Present</h2>
+          <p>Deliver Web and mobile app-based design solutions</p>
+          <p>Align to project priorities, milestones, guard rails, deliverables and timelines</p>
+          <h2>Microsoft</h2>
+          <p>Share Point Mobile UX (iOS, Android, Windows)</p>
+          <p>Storefront expereicen across web, tablet, and mobile</p>
+          <p>Maintained the run-of-business UX for the live site (microsoft.com)</p>
+        </section>
+        <div id="space"></div>
+        <section>
+          <h1>Education</h1>
+          <h2>University of Washington / 2014 - 2015</h2>
+          <p>Professional degree in Human Centered Design &amp; Engineering</p>
+          <h2>University of Washington / 2008 - 2010</h2>
+          <p>B.A in interdisciplinary visual arts</p>
+        </section>
       </div>
-    </section>
-    <section id="about" class="tab-content">
-      <section>
-        <h1>Work Experiecne</h1>
-        <h2>T-Mobile / 2017 - Present</h2>
-        <p>Deliver Web and mobile app-based design solutions</p>
-        <p>Align to project priorities, milestones, guard rails, deliverables and timelines</p>
-        <h2>Microsoft</h2>
-        <p>Share Point Mobile UX (iOS, Android, Windows)</p>
-        <p>Storefront expereicen across web, tablet, and mobile</p>
-        <p>Maintained the run-of-business UX for the live site (microsoft.com)</p>
-      </section>
-      <div id="space"></div>
-      <section>
-        <h1>Education</h1>
-        <h2>University of Washington / 2014 - 2015</h2>
-        <p>Professional degree in Human Centered Design &amp; Engineering</p>
-        <h2>University of Washington / 2008 - 2010</h2>
-        <p>B.A in interdisciplinary visual arts</p>
-      </section>
-    </div>
     </main>
     <footer>
       &copy; 2017 Code Fellows | Kenny Hong | 301 Portfolio
@@ -98,8 +98,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- TODO: Include Handlebars.JS from a CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-    <script src="scripts/blogArticles.js"></script>
+    <script src="data/blogArticles.js"></script>
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
+    <script>
+      Article.fetchAll();
+    </script>
   </body>
   </html>
