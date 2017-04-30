@@ -27,9 +27,9 @@ Article.prototype.toHtml = function() {
   return template(this);
 };
 Article.loadAll = function(rawData) {
-rawData.sort(function(a,b) {
-  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-});
+// rawData.sort(function(a,b) {
+//   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+// });
 
 rawData.forEach(function(articleObject) {
   Article.all.push(new Article(articleObject));
